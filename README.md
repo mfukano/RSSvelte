@@ -1,38 +1,15 @@
-# create-svelte
+# What is this?
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is a simple full-stack implementation of the [RSS feed reader website from Codementor DevProjects](https://www.codementor.io/projects/web/rss-feed-reader-website-atx32j280x).
 
-## Creating a project
+Currently, the Vite server can be run (via `npm run dev`) and the RSS feed XML can be read via the AllOrigins proxy that the RSS link feeds through in
+the index +page.svelte.
 
-If you're seeing this, you've probably already done this step. Congrats!
+It's my first touch with building a project using Svelte (pretty cool btw, reminds me of how you structure Vue projects).
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+# TO-DO:
+- Begin working through XML parsing after the feed is retrieved
+    - Can Vite projects utilize simple TS libraries and modules in the same ways?
+- Wire up the src/lib/components/Article.svelte component once the RSS articles are parsable from XML.
+    - Initial formatting should already be created.
+- Stylize pages and components.
